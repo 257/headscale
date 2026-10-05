@@ -1948,6 +1948,7 @@ type Policy struct {
 	Tests               []PolicyTest       `json:"tests,omitempty"`
 	SSHTests            []SSHPolicyTest    `json:"sshTests,omitempty"`
 	RandomizeClientPort bool               `json:"randomizeClientPort,omitempty"`
+	Postures            map[string][]string `json:"postures,omitempty"`
 }
 
 // MarshalJSON is deliberately not implemented for [Policy].
